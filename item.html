@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- /font links -->
+    <title>GGS | GGS.cz</title>
+</head>
+<body>
+    <header>
+        <div id="top-navbar">
+            <a href="index.html"><img src="pics/logo/Logo-Optimized.svg" alt="logo" id="top-navbar-logo"></a>
+            <div id="search-bar-wrapp">
+                <form id="search-bar">
+                    <input type="text" placeholder="find your new game" id="search-field">
+                    <button type="submit" id="submit-button">
+                        <img id="search-img" src="pics/lupa/optimalizovanaLupa.svg" alt="magnifying glass" >
+                    </button>
+                </form>
+            </div>
+            <div id="right-side">
+                <a id="cart" href="" >
+                    cart
+                </a>
+                |
+                <a id="login" href="login.html">
+                    login
+                </a>
+            </div>
+            <div id="navigationEvent" onclick="menu()"><img src="pics\video-game.png" alt="gamepad" id="gamepad"></div>
+        </div>
+        <div id="bottom-navbar" class="hidden">
+            <nav id="navigation">
+                <ul class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">PS5</span></a></ul>
+                <ul class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">Xbox</span></a></ul>
+                <ul class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">PC</span></a></ul>
+                <ul class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">Hardware</span></a></ul>
+                <ul class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">Merchendise</span></a></ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="path-to-file"><a href="">games</a> -> <a href="">action</a> -> <a href="">PC</a> -> <a href="">Creed of Assassins</a></div>
+        <div id="item-grid">
+            <img src="pics/img/itemImg/assasinsCreed.png" alt="productImg">
+            <div id="item-top-info">
+                <h1 id="item-title">Creed of Assassins</h1>
+                <div id="item-bar-wrapp">
+                    <div id="item-form-select">
+                        <select name="platform" id="platform" form="item-buy">
+                            <option value="PC">PC</option>
+                            <option value="PS5">PS5</option>
+                            <option value="Xbox">Xbox</option>
+                        </select>
+                        <select name="distribution" id="distribution" form="item-buy">
+                            <option value="Digital">Digital</option>
+                            <option value="Collector">Collector</option>                                
+                        </select>
+                        <select name="edition" id="edition" form="item-buy">
+                            <option value="Standart">Standart</option>
+                            <option value="Gold">Gold</option>
+                            <option value="Ultimate">Ultimate</option>
+                        </select>
+                    </div>
+                    <div id="bottom-part-item-form">    
+                        <section>
+                            <p id="price">$30</p>
+                            <p id="stock">in stock > 10</p>
+                        </section>
+                        <form action="POST" id="item-buy">                                
+                            <input type="submit" value="Add to cart" id="Add-to-cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="details-item-bar">
+            <h2>details</h2>
+            <h3>THE ULTIMATE ASSASSIN</h3>
+            <p>Become the most versatile Assassin in franchise history. Parkour seamlessly through the city and leverage the largest assortment of tools to date. Get contracts at the Assassin’s bureaus, collect vital clues, and stealthily take down targets with more visceral assassinations than ever before.</p>
+            <h3>AN IMMERSIVE, REACTIVE CITY</h3>
+            <p>Explore a dense and vibrant city whose inhabitants react to your every move. Uncover the secrets of four unique districts, from the industrial Karkh to the lush gardens of the Round City. Discover surprising world events and interact with historical figures that shaped the Golden Age of Baghdad.</p>
+        </div>                
+    </main>
+    <footer>
+        <div id="footer-text">
+            <ul>
+                <li class="nadpis-footer">GGS</li>
+                <li>na Strži 1200</li>
+                <li>Praha</li>
+                <li>140 00</li>
+            </ul>
+            <ul>
+                <li class="nadpis-footer">about us</li>
+                <li><a href="contacts.html" class="footer-links">contacts</a></li>
+                <li><a href="" class="footer-links">resellers</a></li>
+                <li><a href="terms.html" class="footer-links">policy</a></li>
+                <li><a href="" class="footer-links">carreer</a></li>
+            </ul>
+        </div>
+        <div id="copyright">
+            <p> © 2022 - 2022 simonzanta - All Rights Reserved. </p>
+                <p>Last Updated : 10/14/2022 20:06:45</p>
+        </div> 
+    </footer>
+    <script src="myOwnLibrary.js"></script>
+</body>
+</html>

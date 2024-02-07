@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- /font links -->
+    <title>GGS | contacts</title>
+</head>
+<body>
+    <header>
+        <div id="top-navbar">
+            <a href="index.html"><img src="pics/logo/Logo-Optimized.svg" alt="logo" id="top-navbar-logo"></a>
+            <div id="search-bar-wrapp">
+                <form id="search-bar">
+                    <input type="text" placeholder="find your new game" id="search-field">
+                    <button type="submit" id="submit-button">
+                        <img id="search-img" src="pics/lupa/optimalizovanaLupa.svg" alt="magnifying glass" >
+                    </button>
+                </form>
+            </div>
+            <div id="right-side">
+                <a id="cart" href="" >
+                    cart
+                </a>
+                |
+                <a id="login" href="login.html">
+                    login
+                </a>
+            </div>
+            <div id="navigationEvent" onclick="menu()"><img src="pics\video-game.png" alt="gamepad" id="gamepad"></div>
+        </div>
+        <div id="bottom-navbar" class="hidden">
+            <nav id="navigation">
+                <ul class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">PS5</span></a></ul>
+                <ul class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">Xbox</span></a></ul>
+                <ul class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">PC</span></a></ul>
+                <ul class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">Hardware</span></a></ul>
+                <ul class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">Merchendise</span></a></ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d599.1739694469478!2d14.438566881113763!3d50.045871720118804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b93f567f016ed%3A0xdfbd29993215b902!2sNa%20Str%C5%BEi%201200%2C%20140%2000%20Praha%204-Kr%C4%8D!5e0!3m2!1scs!2scz!4v1666466924639!5m2!1scs!2scz"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="contacts-to-people">
+            <div id="support-wrapp">
+                <h2>support</h2>
+                <h3>+420 123 456 789</h3>
+                <form action="POST">
+                    <textarea id="story" name="story" rows="5" cols="33">your message ...
+                    </textarea><br>
+                    <input type="submit" value="write us" id="write-us">
+                </form>
+                <p id="support-info"><span>open from</span><span>7:00 AM to 8:00 PM on work days</span></p>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div id="footer-text">
+                <ul>
+                    <li class="nadpis-footer">GGS</li>
+                    <li>na Strži 1200</li>
+                    <li>Praha</li>
+                    <li>140 00</li>
+                </ul>
+                <ul>
+                    <li class="nadpis-footer">about us</li>
+                    <li><a href="contacts.html" class="footer-links">contacts</a></li>
+                    <li><a href="" class="footer-links">resellers</a></li>
+                    <li><a href="terms.html" class="footer-links">policy</a></li>
+                    <li><a href="" class="footer-links">carreer</a></li>
+                </ul>
+            </div>
+            <div id="copyright">
+              <p> © 2022 - 2022 simonzanta - All Rights Reserved. </p>
+                    <p>Last Updated : 10/14/2022 20:06:45</p>
+            </div>
+        </div>
+    </footer>
+    <script src="myOwnLibrary.js"></script>
+</body>
+</html>

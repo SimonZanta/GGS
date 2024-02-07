@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- /font links -->
+    <title>GGS | GGS.cz</title>
+</head>
+<body>
+    <header>
+        <div id="top-navbar">
+            <a href="index.html"><img src="pics/logo/Logo-Optimized.svg" alt="logo" id="top-navbar-logo"></a>
+            <div id="search-bar-wrapp">
+                <form id="search-bar">
+                    <input type="text" placeholder="find your new game" id="search-field">
+                    <button type="submit" id="submit-button">
+                        <img id="search-img" src="pics/lupa/optimalizovanaLupa.svg" alt="magnifying glass" >
+                    </button>
+                </form>
+            </div>
+            <div id="right-side">
+                <a id="cart" href="" >
+                    cart
+                </a>
+                |
+                <a id="login" href="login.html">
+                    login
+                </a>
+            </div>
+            <div id="navigationEvent" onclick="menu()"><img src="pics/video-game.png" alt="gamepad" id="gamepad"></div>
+        </div>
+        <div id="bottom-navbar" class="hidden">
+            <nav id="navigation">
+                <div class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">PS5</span></a></div>
+                <div class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">Xbox</span></a></div>
+                <div class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">PC</span></a></div>
+                <div class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">Hardware</span></a></div>
+                <div class="nav-it-wrapp"><a href="" class="nav-item"><span class="nav-item-span">Merchendise</span></a></div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="games-slider">
+            <div class="gameSlide">
+              <img src="pics/img/slider/lovecraftCaveSlider.png" alt="the Passage Slider Image">
+            </div>
+            <div class="gameSlide">
+                <img src="pics/img/slider/Sci-fiShipSlider.png" alt="space Conquer slider image">
+            </div>
+            <div class="gameSlide">
+                <img src="pics/img/slider/spaceSlider.png" alt="space civilization slider image">
+            </div>
+        </div>
+
+        <div class="items-slider-wrapper" >
+            <h1>hot on steam</h1>
+            <div class="items-slider">
+                <button class="arrow-button left-button" id="hot-left-button" onclick="changeHotSteam('left', 'hot')"><img src="pics/arrows/arrowOptimized.svg" alt="Arrow-left"></button>
+                <div class="items-wrapper">
+                    <a href="item.html"><div id="H1" class="item hot">
+                        <img src="pics/img/sliderBottom/KredoAssassinu.png" alt="creed of assasin product">
+                        <div class="item-label hidden-part">
+                        <p class="label">creed of assassins</p>
+                         <p class="price">$59</p>
+                         <p class="description">story driven game with focus on close combat</p>
+                        </div>
+                    </div></a>
+                    <a href="item.html"><div id="H2" class="item hot">
+                        <img src="pics/img/sliderBottom/fireBorne.png" alt="fire borne product">
+                        <div class="item-label hidden-part">
+                            <p class="label">Soul Reborn</p>
+                            <p class="price">$39 <span class="sale">sale</span></p>
+                            <p class="description">dark and gore in one game</p>
+                        </div>
+                    </div></a>
+                    <a href="item.html"><div id="H3" class="item hot">
+                        <img src="pics/img/sliderBottom/darkCP.png" alt="cybercity product">
+                        <div class="item-label hidden-part">
+                            <p class="label">cyberCity</p>
+                            <p class="price">$59</p>
+                            <p class="description">lot of dark and lights idk</p>
+                        </div>
+                    </div></a>
+                    <a href="item.html"><div id="H4" class="item hot">
+                        <img src="pics/img/sliderBottom/urban.png" alt="hidden city product">
+                        <div class="item-label hidden-part">
+                            <p class="label">hidden city</p>
+                            <p class="price">$59</p>
+                            <p class="description">explore hidden city</p>
+                        </div>
+                    </div></a>
+                    <a href="item.html"><div id="H5" class="item hot">
+                        <img src="pics/img/sliderBottom/thePassage.png" alt="the passage product">
+                        <div class="item-label hidden-part">
+                            <p class="label">the passage</p>
+                            <p class="price">$59</p>
+                            <p class="description">horror game with lovecraft theme</p>
+                        </div>
+                    </div></a>
+                    <a href="item.html"><div id="H6" class="item hot" >
+                        <img src="pics/img/sliderBottom/Sci-fiShip.png" alt="star conquer product">
+                        <div class="item-label hidden-part">
+                            <p class="label">star conquer</p>
+                            <p class="price">$59</p>
+                            <p class="description">be first explorer on mars and find resources</p>
+                        </div>
+                    </div></a>
+                </div>
+                <button class="arrow-button right-button" id="hot-right-button" onclick="changeHotSteam('right', 'hot')"><img class="right-arrow" src="pics/arrows/arrowOptimized.svg" alt="Arrow-right"></button>
+            </div>
+        </div>
+
+        <div class="items-slider-wrapper" >
+            <h1>new games</h1>
+            <div class="items-slider">
+                <button class="arrow-button left-button" id="new-left-button" onclick="changeHotSteam('left', 'new')"><img src="pics/arrows/arrowOptimized.svg" alt="Arrow-left"></button>
+                <div class="items-wrapper">
+                    
+                    
+                    <a href="item.html"><div id="N1" class="item new">
+                        <img src="pics/img/sliderBottom/darkCP.png" alt="cybercity product">
+                        <div class="item-label hidden-part">
+                            <p class="label">cyberCity</p>
+                            <p class="price">$59</p>
+                            <p class="description">lot of dark and lights idk</p>
+                        </div>
+                    </div></a>
+                    <a href="item.html"><div id="N2" class="item new">
+                        <img src="pics/img/sliderBottom/thePassage.png" alt="the passage product">
+                        <div class="item-label hidden-part">
+                            <p class="label">the passage</p>
+                            <p class="price">$59</p>
+                            <p class="description">horror game with lovecraft theme</p>
+                        </div>
+                    </div></a>                    
+                    <a href="item.html"><div id="N3" class="item new">
+                        <img src="pics/img/sliderBottom/urban.png" alt="hidden city product">
+                        <div class="item-label hidden-part">
+                            <p class="label">hidden city</p>
+                            <p class="price">$59</p>
+                            <p class="description">explore hidden city</p>
+                        </div>
+                    </div></a>
+                    <a href="item.html"><div id="N4" class="item new">
+                        <img src="pics/img/sliderBottom/fireBorne.png" alt="fire borne product">
+                        <div class="item-label hidden-part">
+                            <p class="label">Soul Reborn</p>
+                            <p class="price">$39 <span class="sale">sale</span></p>
+                            <p class="description">dark and gore in one game</p>
+                        </div>
+                    </div></a>
+                    <a href="item.html"><div id="N5" class="item new">
+                        <img src="pics/img/sliderBottom/KredoAssassinu.png" alt="creed of assasin product">
+                        <div class="item-label hidden-part">
+                        <p class="label">creed of assassins</p>
+                         <p class="price">$59</p>
+                         <p class="description">story driven game with focus on close combat</p>
+                        </div>
+                    </div></a>
+                    <a href="item.html"><div id="N6" class="item new" >
+                        <img src="pics/img/sliderBottom/Sci-fiShip.png" alt="star conquer product">
+                        <div class="item-label hidden-part">
+                            <p class="label">star conquer</p>
+                            <p class="price">$59</p>
+                            <p class="description">be first explorer on mars and find resources</p>
+                        </div>
+                    </div></a>
+
+                </div>
+                <button class="arrow-button right-button" id="new-right-button" onclick="changeHotSteam('right', 'new')"><img class="right-arrow" src="pics/arrows/arrowOptimized.svg" alt="Arrow-right"></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div id="footer-text">
+                <ul>
+                    <li class="nadpis-footer">GGS</li>
+                    <li>na Strži 1200</li>
+                    <li>Praha</li>
+                    <li>140 00</li>
+                </ul>
+                <ul>
+                    <li class="nadpis-footer">about us</li>
+                    <li><a href="contacts.html" class="footer-links">contacts</a></li>
+                    <li><a href="" class="footer-links">resellers</a></li>
+                    <li><a href="terms.html" class="footer-links">policy</a></li>
+                    <li><a href="" class="footer-links">carreer</a></li>
+                </ul>
+            </div>
+            <div id="copyright">
+              <p> © 2022 - 2022 simonzanta - All Rights Reserved. </p>
+                    <p>Last Updated : 10/14/2022 20:06:45</p>
+            </div>
+        </div>
+    </footer>
+<script src="myOwnLibrary.js"></script>
+<script>
+    
+    function changeHotSteam(site, mainClass){
+        var elems = document.getElementsByClassName(`item ${mainClass}`);
+        length = elems.length;
+        
+        if(site === "left"){
+            elems[length-1].style.display = "none";
+            elems[length-2].style.display = "none";
+            elems[0].style.display = "block";
+            elems[1].style.display = "block";
+            document.getElementById(`${mainClass}-left-button`).style.visibility = "hidden";
+            document.getElementById(`${mainClass}-right-button`).style.visibility = "visible";
+        }else{
+            elems[length-1].style.display = "block";
+            elems[length-2].style.display = "block";
+            elems[0].style.display = "none";
+            elems[1].style.display = "none";
+            document.getElementById(`${mainClass}-right-button`).style.visibility = "hidden";
+            document.getElementById(`${mainClass}-left-button`).style.visibility = "visible";
+        }
+        
+        
+    }
+
+
+    let slideIndex = 0;
+    gameSlideShow();
+
+    function gameSlideShow() {
+        let slides = document.getElementsByClassName("gameSlide");
+
+        //set all slides to none
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+
+        slides[slideIndex - 1].style.display = "block"; 
+        
+        //function calls itself after set amount of time - time between changing pictures
+        setTimeout(gameSlideShow, 4000);
+    }
+    </script>
+</body>
+</html>
